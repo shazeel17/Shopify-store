@@ -1,0 +1,122 @@
+.logo{
+    width: 100px;
+    height: 80px;
+    /* mix-blend-mode: darken; */
+}
+a{
+    color: aliceblue;
+}
+.nav-item:hover{
+    border-bottom: 5px solid red;
+}
+#nav{
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+}
+.image{
+    width: 100%;
+    height: 60%;
+    position: absolute;
+    background-image: url(https://imgv3.fotor.com/images/blog-richtext-image/part-blurry-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 45px;
+    animation: slider 15s infinite linear;
+}
+@keyframes slider{
+    0%{background-image: url(./1.webp);}
+    20%{background-image: url(./2.webp);}
+    40%{background-image: url(./3.jpg);}
+    60%{background-image: url(https://images.inc.com/uploaded_files/image/1920x1080/full-shopping-cart-1940x900_36101.jpg);}
+    80%{background-image: url(https://cdn.metro-online.com/-/media/Project/MCW/PK_Metro/2020-to-2021/Own-Brands-Banners-2021/23-Own-Brand.jpg?h=464&iar=0&w=1392&rev=391bcabbcdae4fc99d5561749552d2de&hash=127DDBCD453EA610748186C1B1A0474F);}
+    100%{background-image: url(https://updater.com/wp-content/uploads/2014/12/woman-in-grocery-store_new-home-grocery-list.webp);}
+
+}
+#van{
+    margin-top: 470px;
+    width: 50px;
+    text-align: center;
+}
+#para{
+    color: red;
+    font-size: 19px;
+    font-weight: bold;
+    text-align: center;
+    
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 500px;
+
+
+}
+.card{
+    width: 230px;
+    border-radius: 50px 0px 50px 0px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+    margin: 20px;
+}
+.card img{
+    height: 200px;
+}
+.card-containe{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+
+}
+#head{
+    box-shadow: 10px 10px 10px orange;
+    width: 95%;
+    height: 70px;
+    color:white;
+    border-radius: 100px;
+    padding-top: 15px;
+    text-align: center;
+    background-color: orange;
+    border: 2px solid orange;
+    
+}
+a{
+    text-decoration: none;
+}
+.footer {
+    background-color: #fff;
+    color: black;
+    padding: 30px 0;
+  }
+  
+  .footer h5 {
+    color: black;
+
+  }
+  
+  .footer ul {
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .footer ul li {
+    padding: 8px 0;
+  }
+  
+  .footer ul li a {
+    color: black;
+
+    text-decoration: none;
+  }
+  
+  .footer ul li a:hover {
+    text-decoration: underline;
+  }
+  
