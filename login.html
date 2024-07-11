@@ -12,8 +12,8 @@
   <link rel="shortcut icon" href="" type="image/x-icon">
   <title>Website</title>
   <style>
-    /* navbar */
-    .logo{
+   /* navbar */
+   .logo{
     width: 100px;
     height: 80px;
     /* mix-blend-mode: darken; */
@@ -89,7 +89,7 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
 }
-</style>
+  </style>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-" style="background-color: orange;" id="nav">
@@ -118,7 +118,8 @@ body{
         </div>
       </div>
     </div>
-  </nav> <br><br><br><br><br><br>
+  </nav>
+  <br><br><br><br><br><br>
   <div class="container">
     <h2 id="game">Login</h2>
     <form id="signup-form">
@@ -141,61 +142,59 @@ body{
   
   <script>
     document.addEventListener("DOMContentLoaded", function() {
-  const form = document.getElementById("signup-form");
-  const message = document.getElementById("message");
+      const form = document.getElementById("signup-form");
+      const message = document.getElementById("message");
 
-  form.addEventListener("submit", function(event) {
-    event.preventDefault();
+      form.addEventListener("submit", function(event) {
+        event.preventDefault();
 
-    const formData = new FormData(form);
-    const username = formData.get("username");
-    const email = formData.get("email");
-    const password = formData.get("password");
+        const formData = new FormData(form);
+        const username = formData.get("username");
+        const email = formData.get("email");
+        const password = formData.get("password");
 
-    // Perform validation here if needed
+        // Display username after form submission
+        message.textContent = `Thank you, ${username}, your account has been created.`;
+        message.style.color = "green";
 
-    // Example: Display success message
-    message.textContent = `Thank you, Your account has been created.`
-    message.style.color = "green";
-
-    // Clear form fields after submission
-    form.reset();
-  });
-});
-
+        // Clear form fields after submission
+        form.reset();
+      });
+    });
   </script>
-   <footer class="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <h5>About Us</h5>
-          <p>You can buy here</p>
-        </div>
-        <div class="col-md-4">
-          <h5>Quick Links</h5>
-          <ul class="list-unstyled">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Shop</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div>
-        <div class="col-md-4">
-          <h5>Contact Us</h5>
-          <ul class="list-unstyled">
-            <li>Address: 123 Shopping St, City, Country</li>
-            <li>Email: info@example.com</li>
-            <li>Phone: +123 456 7890</li>
-          </ul>
-        </div>
+
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h5>About Us</h5>
+        <p>You can buy here</p>
       </div>
-      <div class="row">
-        <div class="col-md-12 text-center">
-          <hr>
-          <p>&copy; 2024 Your Company. All rights reserved.</p>
-        </div>
+      <div class="col-md-4">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h5>Contact Us</h5>
+        <ul class="list-unstyled">
+          <li>Address: 123 Shopping St, City, Country</li>
+          <li>Email: info@example.com</li>
+          <li>Phone: +123 456 7890</li>
+        </ul>
       </div>
     </div>
-  </footer>
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <hr>
+        <p>&copy; 2024 Your Company. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
 </body>
 </html>
